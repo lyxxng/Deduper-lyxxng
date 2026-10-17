@@ -2,7 +2,7 @@
 Strands are duplicated during PCR. These PCR duplicates can give a false sense of sequencing depth, since not every piece of DNA will amplify equally. Essentially, it will affect anything where we are quantifying how often a sequence appears in a sample. To remove PCR duplicates, we need to take into account the chromosome, 5' start of the read, strand, and UMI.
 
 ### Pseudocode
-```python
+```
 def get_args():
     ''' Function that creates and returns an argparse object that
     defines the file, outfile, umi, and help options. '''
@@ -101,7 +101,7 @@ def dedup(infile, outfile, umi_set):
             add to curr_set
             write line to output file
         
-        return
+    return
 
 def main():
     ''' Get argparse arguments, UMI set, and run dedup function '''
