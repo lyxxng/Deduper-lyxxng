@@ -61,7 +61,7 @@ def get_read_start(reverse, pos, cigar):
     if (not reverse and S at cigar[1]):
         pos = pos - cigar[0]
     elif reverse:
-        for 0, 2, 5, ... in cigar:
+        for 0, 2, 4, ... in cigar:
             pos += cigar
     retun pos
 
